@@ -4,7 +4,7 @@
 Implementimi i funksionaliteteve themelore të regjistrimit dhe kyçjes së përdoruesit.
 
 ## Sprint Duration
-1 javë (29 Prill - 6 Maj 2025)
+1 javë (24 Prill - 1 Maj 2025)
 
 ## Selected User Stories
 1. **User Registration** (HIGH)  
