@@ -8,36 +8,7 @@ Ky është një aplikacion web që ndihmon përdoruesit të menaxhojnë financat
 - Albiona Maxhuni – UI/UX Dizajnere dhe Testuese
 
 ## How to Set Up
-1. Klononi projektin nga GitHub:
 
-```bash
-git clone https://github.com/Agnesa14/Personal-Finance-Management-Tool.git
-
-2. Instaloni varësitë për backend-in:
-
-```bash
-cd personal-finance-app/server
-npm install
-
-3. Krijoni skedarin .env me:
-
-```ini
-
-PORT=5000
-MONGO_URI=mongodb+srv://agnesamax:H73YCWAUrysJMP9I@cluster0.jmpf4ka.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-
-4. Startoni backend-in:
-
-```bash
-npm run dev
-
-5. Instaloni varësitë për frontend-in:
-
-```bash
-
-cd client
-npm install
-npm start
 
 ## Project Timeline
 - Java 5: Vendosja e projektit dhe planifikimi fillestar
