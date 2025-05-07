@@ -9,6 +9,7 @@ Ky është një aplikacion web që ndihmon përdoruesit të menaxhojnë financat
 
 ## How to Set Up
 
+<<<<<<< HEAD
 1. Klononi projektin nga GitHub:
 
 ```bash
@@ -41,6 +42,8 @@ bash
 cd ../client
 npm install
 npm start
+=======
+>>>>>>> f83647f186948b0e86951321ab2b46f503afc226
 
 ## Project Timeline
 - Java 5: Vendosja e projektit dhe planifikimi fillestar
