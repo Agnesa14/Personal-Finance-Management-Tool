@@ -16,27 +16,27 @@ git clone https://github.com/Agnesa14/Personal-Finance-Management-Tool.git
 
 2.Hyni në dosjen e backend-it:
 
-```bash
+bash
 
 cd personal-finance-app/server
 npm install
 
 3.Krijoni skedarin .env brenda server/ dhe vendosni këtë:
 
-```ini
+ini
 
 PORT=5000
 MONGO_URI=mongodb+srv://agnesamax:H73YCWAUrysJMP9I@cluster0.jmpf4ka.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 
 4. Nisni backend-in:
 
-```bash
+bash
 
 npm run dev
 
 5. Hyni në dosjen e frontend-it:
 
-```bash
+bash
 
 cd ../client
 npm install
