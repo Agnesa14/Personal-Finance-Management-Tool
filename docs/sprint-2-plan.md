@@ -1,14 +1,14 @@
-Sprint 2 Plan
+#Sprint 2 Plan
 
-Sprint Goal
+##Sprint Goal
 
 Zhvillimi i funksionaliteteve kryesore për menaxhimin e shpenzimeve, buxhetit mujor dhe përmirësimi i ndërfaqes së përdoruesit për një eksperiencë më të mirë.
 
-Sprint Duration
+##Sprint Duration
 
 1 javë (8 Maj – 16 Maj 2025)
 
-Selected User Stories
+##Selected User Stories
 
 1. Add Expense – HIGH
 
@@ -51,7 +51,7 @@ Dërgim i paralajmërimeve kur limiti tejkalohet.
 
 Konfigurim i pragut nga përdoruesi.
 
-Team Member Tasks
+##Team Member Tasks
 
 Agnesa Maxhuni: Modelimi i skemave MongoDB për shpenzime dhe buxhet; ndërtimi i endpoint-eve të backend-it.
 
@@ -59,7 +59,7 @@ Albiona Maxhuni: Zhvillimi i komponentëve React për formën e shpenzimeve, lis
 
 Të dyja: Testimi i API-ve, integrimi i UI-së me backend, shqyrtimi i kodit dhe commit final.
 
-Definition of Done
+##Definition of Done
 
 Funksionalitetet janë të testuara dhe punojnë në ambient lokal.
 
