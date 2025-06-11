@@ -1,9 +1,9 @@
 require('dotenv').config();
-<<<<<<< HEAD
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
+// Importimi i rrugeve
 const authRoutes = require('./routes/authRoutes');
 const expenseRoutes = require('./routes/expenseRoutes');
 const incomeRoutes = require('./routes/incomeRoutes');
@@ -13,13 +13,6 @@ const reportRoutes = require('./routes/reportRoutes');
 const settingsRoutes = require('./routes/settingsRoutes');
 const accountRoutes = require('./routes/accountRoutes');
 const notificationRoutes = require('./routes/notificationRoutes');
-=======
-console.log("MONGO_URI nga .env:", process.env.MONGO_URI);
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-const authRoutes = require('./routes/authRoutes');
->>>>>>> 67ccfbe8e6f447a73a06c34744b6fd7996ac78d2
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -32,19 +25,19 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/expenses', expenseRoutes);
 app.use('/api/incomes', incomeRoutes);
-app.use('/api/budgets', budgetRoutes);   // përfshin edhe /summary
+app.use('/api/budgets', budgetRoutes); // përfshin edhe /summary
 app.use('/api/goals', goalRoutes);
 app.use('/api/reports', reportRoutes);
 app.use('/api/settings', settingsRoutes);
-app.use('/api/accounts', accountRoutes); // për Accounts
+app.use('/api/accounts', accountRoutes);
 app.use('/api/notifications', notificationRoutes);
 
-// Test route
+// Rruga kryesore për testim
 app.get("/", (req, res) => {
   res.send("API is running...");
 });
 
-// Lidhja me MongoDB dhe Startimi i Serverit
+// Lidhja me MongoDB dhe Startimi i serverit
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
