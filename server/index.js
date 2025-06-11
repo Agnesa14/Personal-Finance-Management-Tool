@@ -1,4 +1,5 @@
 require('dotenv').config();
+<<<<<<< HEAD
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -12,6 +13,13 @@ const reportRoutes = require('./routes/reportRoutes');
 const settingsRoutes = require('./routes/settingsRoutes');
 const accountRoutes = require('./routes/accountRoutes');
 const notificationRoutes = require('./routes/notificationRoutes');
+=======
+console.log("MONGO_URI nga .env:", process.env.MONGO_URI);
+const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const authRoutes = require('./routes/authRoutes');
+>>>>>>> 67ccfbe8e6f447a73a06c34744b6fd7996ac78d2
 
 const app = express();
 const PORT = process.env.PORT || 5000;
