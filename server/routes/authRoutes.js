@@ -6,6 +6,7 @@ router.post('/reset-password', resetPassword);
 
 
 // Rruga për regjistrim
+
 router.post('/register', register);
 
 // Rruga për login

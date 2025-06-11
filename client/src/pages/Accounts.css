@@ -1,0 +1,53 @@
+.accounts-container {
+  padding: 30px;
+}
+
+.account-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.account-form input,
+.account-form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.account-form button {
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.account-form button:hover {
+  background-color: #08306b;
+}
+
+.account-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.account-item {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.account-item button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}

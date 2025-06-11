@@ -1,0 +1,149 @@
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background-color: #edecec;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e5e5e5;
+}
+
+.logo-img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.sidebar-section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  margin: 6px 0;
+  font-size: 15px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.sidebar-link svg {
+  margin-right: 10px;
+}
+
+.sidebar-link:hover {
+  color: #0d47a1;
+  background-color: #ddd;
+  font-weight: 500;
+}
+
+.sidebar-link:active {
+  background-color: #fff;
+  font-weight: 500;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+}
+
+.sidebar-footer button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px 0;
+}
+
+.sidebar-footer button:hover {
+  color: #e74c3c;
+}
+
+/* MAIN AREA */
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOPBAR */
+.topbar {
+  height: 60px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.new-btn {
+  background-color: #0d47a1;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.new-btn:hover {
+  background-color: #08306b;
+}
+
+/* E DJATHTA E TOPBARIT */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.calculator-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 18px;
+  padding: 4px;
+  transition: color 0.2s ease;
+}
+
+.calculator-btn:hover {
+  color: #0d47a1;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #333;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  padding: 30px;
+  background-color: #f9f9f9;
+  flex: 1;
+  overflow-y: auto;
+}

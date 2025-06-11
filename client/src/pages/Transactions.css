@@ -1,0 +1,87 @@
+.transactions-container {
+    padding: 30px;
+    background-color: #f9f9f9;
+    height: 100%;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.tabs button.active {
+    background-color: #0d47a1;
+    color: white;
+}
+
+.tabs button:hover {
+    background-color: #08306b;
+
+    color: white;
+}
+
+.transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-new-btn {
+    background-color: #0d47a1;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.add-new-btn:hover {
+    background-color: #08306b;
+    columns: white;
+}
+
+.transactions-table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.transactions-table th,
+.transactions-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.transactions-table th {
+    background-color: #f4f4f4;
+    font-weight: 600;
+}
+
+.filter-select {
+
+    margin-left: 15px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.transactions-header .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

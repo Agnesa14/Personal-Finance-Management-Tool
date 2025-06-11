@@ -1,98 +1,97 @@
 .login-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f2f5;
-  }
-  
-  .login-card {
-    background: white;
-    padding: 40px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 380px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  
-  .login-logo {
-    width: 150px;
-    margin-bottom: 5px;
-  }
-  
-  .login-card h2 {
-    margin-bottom: 20px;
-    color: #0d47a1;
-  }
-  
-  .login-card form input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-  }
-  
-  .login-card form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #0d47a1;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 15px;
-    cursor: pointer;
-    margin-bottom: 6px;
-  }
-  
-  .login-card form button:hover {
-    background-color: #08306b;
-  }
-  
-  .remember-me {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    margin-bottom: 15px;
-    color: #444;
-    text-align: left;
-    margin-right: 5px;
-    vertical-align: middle;
-  }
-  
-  
-  .login-links p {
-    font-size: 14px;
-    margin: 6px 0;
-  }
-  
-  .login-links a {
-    color: #0d47a1;
-    text-decoration: none;
-  }
-  
-  .login-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .message {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-  
-  .message.success {
-    color: green;
-  }
-  
-  .message.error {
-    color: red;
-  }
-  
-  .home {
-    padding: 15px;
-    padding-bottom: 0;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.login-card {
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-logo {
+  width: 150px;
+  margin-bottom: 5px;
+}
+
+.login-card h2 {
+  margin-bottom: 20px;
+  color: #0d47a1;
+}
+
+.login-card form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.login-card form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0d47a1;
+
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.login-card form button:hover {
+  background-color: #08306b;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #444;
+  text-align: left;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.login-links p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.login-links a {
+  color: #0d47a1;
+  text-decoration: none;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.message.success {
+
+  color: green;
+}
+
+.message.error {
+  color: red;
+}
+
+.home {
+  padding: 15px;
+  padding-bottom: 0;
+}

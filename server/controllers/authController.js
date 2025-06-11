@@ -9,7 +9,9 @@ exports.register = async (req, res) => {
   try {
     const existingUser = await User.findOne({ email });
     if (existingUser)
-      return res.status(400).json({ message: 'Ky email është i regjistruar tashmë.' });
+      return res.status(400).json({
+        message: 'Ky email është i regjistruar tashmë.'
+      });
 
     const hashedPassword = await bcrypt.hash(password, 10);
 
@@ -22,7 +24,9 @@ exports.register = async (req, res) => {
     res.status(201).json({ message: 'Regjistrimi u krye me sukses.' });
   } catch (err) {
     console.error('Gabim gjatë regjistrimit:', err);
-    res.status(500).json({ message: 'Ndodhi një gabim në server gjatë regjistrimit.' });
+    res.status(500).json({
+      message: 'Ndodhi një gabim në server gjatë regjistrimit.'
+    });
   }
 };
 
@@ -33,14 +37,17 @@ exports.login = async (req, res) => {
   try {
     const user = await User.findOne({ email });
     if (!user)
-      return res.status(404).json({ message: 'Nuk u gjet asnjë përdorues me këtë email.' });
-
+      return res.status(404).json({
+        message: 'Nuk u gjet asnjë përdorues me këtë email.'
+      });
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch)
-      return res.status(400).json({ message: 'Email ose fjalëkalim i pasaktë.' });
-
-    const token = jwt.sign({ userId: user._id }, 'sekret_jwt', { expiresIn: '1d' });
-
+      return res.status(400).json({
+        message: 'Email ose fjalëkalim i pasaktë.'
+      });
+    const token = jwt.sign({ userId: user._id }, 'sekret_jwt', {
+      expiresIn: '1d'
+    });
     res.json({
       token,
       user: {
@@ -51,7 +58,9 @@ exports.login = async (req, res) => {
     });
   } catch (err) {
     console.error('Gabim gjatë kyçjes:', err);
-    res.status(500).json({ message: 'Ndodhi një gabim në server gjatë kyçjes.' });
+    res.status(500).json({
+      message: 'Ndodhi një gabim në server gjatë kyçjes.'
+    });
   }
 };
 
@@ -62,7 +71,9 @@ exports.resetPassword = async (req, res) => {
   try {
     const user = await User.findOne({ email });
     if (!user)
-      return res.status(404).json({ message: 'Nuk u gjet asnjë përdorues me këtë email.' });
+      return res.status(404).json({
+        message: 'Nuk u gjet asnjë përdorues me këtë email.'
+      });
 
     const hashed = await bcrypt.hash(newPassword, 10);
     user.password = hashed;
@@ -71,6 +82,6 @@ exports.resetPassword = async (req, res) => {
     res.json({ message: 'Fjalëkalimi u rivendos me sukses.' });
   } catch (err) {
     console.error('Gabim gjatë rivendosjes së fjalëkalimit:', err);
-    res.status(500).json({ message: 'Ndodhi një gabim në server gjatë rivendosjes së fjalëkalimit.' });
+    res.status(500).json({message: 'Ndodhi një gabim në server gjatë rivendosjes së fjalëkalimit.' });
   }
 };
